@@ -1,0 +1,40 @@
+/* TIENDA MARCAS */
+
+.seccionTiendaMarcas {
+    margin-bottom: 4rem;
+    .seccionTiendaMarcas__logo {
+        width: 15vw;
+        margin: auto;
+        img {
+            width: 100%;
+            margin: 3rem 0rem;
+        }
+    }
+}
+
+/* Modal */
+
+.modal-content {
+    height: 70vh;
+    .modal-body {
+        height: 100%;
+        div:nth-child(1) {
+            @include alto-ancho(50vh, 100%);
+            img {
+                @include alto-ancho(80%, 80%);
+            }
+            .boton {
+                @include boton-base($color-compras, $color-secundario);
+                width: 80%;
+            }
+            .boton:hover {
+                @include boton-base($color-secundario, $color-compras);
+            }
+        }
+        .parrafoPopulares {
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+}  
+

@@ -1,0 +1,125 @@
+/* Header pagina error 404 */
+
+.headerError404 {
+    background-color: $color-secundario;
+    @include alto-ancho(8vh, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+        @include alto-ancho(8vh, 15vw);
+        img {
+            height: 100%;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+    }
+    .header__nav {
+        > ul {
+            @include alto-ancho(8vh, 56vw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            > li {
+                @include alto-ancho(100%, 14vw);
+                > a {
+                    height: 100%;
+                    color: $color-terciario;
+                    font-size: $font-enlace;
+                    font-weight: bolder;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                a:hover {
+                    background-color: $color-terciario;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    .header__Boton {
+        .botonDeLogin {
+            filter: grayscale(100%);
+
+        }
+    }
+}
+
+/* Main pagina 404 */
+
+.error404 {
+    background-color: #eee;
+    height: 75vh;
+    .error404__contenedor {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: $color-terciario;
+            text-shadow: $box-shadow gray;
+            margin: 3rem 0rem;
+        }
+        .boton {
+            margin: 2rem 0rem;
+        }
+    }
+}
+
+/* Footer pagina 404 */
+
+.footerError404 {
+    height: 15vh;
+    background-color: $color-secundario;
+    .footer__logo {
+        @include alto-ancho(8vh, 15vw);
+        img {
+            height: 100%;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+    }
+    .footer__enlace {
+        height: 100%;
+        ul {
+            @include alto-ancho(15vh, 56vw);
+            li {
+                @include alto-ancho(15vh, 14vw);
+                a {
+                    height: 100%;
+                    color: $color-terciario;
+                    font-size: $font-enlace;
+                    font-weight: bolder;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .footer__redes {
+        @include alto-ancho(5vh, 15vw);
+        display: flex;
+        div {
+            height: 100%;
+            img {
+                height: 100%;
+                margin: 0 0.5rem;
+                filter: grayscale(100%);
+            }
+        }
+    }
+    p {
+        background-color: $color-secundario;
+        font-style: italic;
+        width: 100vw;
+        text-align: center;
+        color: $color-terciario;
+    }
+}

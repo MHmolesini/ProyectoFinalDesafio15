@@ -1,0 +1,78 @@
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import "utilities/variables.scss";
+@import "utilities/mixins.scss";
+
+@import "base/typo";
+@import "components/button";
+
+@import "layout/header";
+
+@import "views/index";
+@import "components/portadas";
+@import "components/logos";
+
+@import "views/tienda";
+
+@import "views/noticias";
+
+main {
+    .sobreNosotros__fondo,
+    .contacto__fondo {
+        background-image: url("../media/images/fondos/imgfondo1-farCry6.jpg");
+        background-size: cover;
+        width: 100vw;
+        height: 60vh;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            h1 {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                font-size: 4rem;
+            }
+            p {
+                height: 100%;
+                width: 50vw;
+                color: white;
+                text-shadow: 3px 3px 7px black;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@import "views/sobrenosotros";
+
+@import "views/contacto";
+
+@import "views/tiendapopulares";
+
+@import "views/tiendamarcas";
+
+@import "layout/footer";
+
+@import "themes/media-0-480";
+
+@import "views/error404";

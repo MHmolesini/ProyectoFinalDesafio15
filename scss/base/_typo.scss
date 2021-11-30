@@ -1,0 +1,18 @@
+/* Titulos */
+
+h1, h2, h3 {
+    font-size: $font-titulo;
+    color: $color-secundario;
+    text-transform: uppercase;
+    text-shadow: $box-shadow-carousel $color-terciario;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+}
+
+h2, h3 {
+    font-size: $font-titulo;
+    color: $color-terciario;
+    text-shadow: $box-shadow gray;
+    margin: 3vh auto;
+}

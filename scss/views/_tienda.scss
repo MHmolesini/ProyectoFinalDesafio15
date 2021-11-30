@@ -1,0 +1,90 @@
+/* TIENDA */
+
+/* Segundo Menu */
+
+main {
+    .segundoMenu {
+        @include alto-ancho(6vh, 100vw);
+        .listaSubMenu {
+            @include alto-ancho(100%, 56vw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            li {
+                @include alto-ancho(100%, 14vw);
+                a {
+                    color: $color-base;
+                    height: 100%;
+                    font-size: $font-enlace;
+                    font-weight: bolder;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                a:hover {
+                    background-color: $color-base;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    .carouselTienda {
+        .carousel-inner  {
+            .carousel-item {
+                height: 86vh;
+            }
+        }
+    }
+}
+
+/* Main */
+
+/* Marcas */
+
+.seccionMarcas__logos {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    align-items: center;
+    .seccionMarcas__logos__logo {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+/* Generos */
+
+.seccionGeneros {
+    .seccionGeneros__contenedor {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .seccionGeneros__contenedor__generos {
+            flex-direction: column;
+            line-height: 2rem;
+            width: 15vw;
+            a {
+                color: black;
+            }
+            a:hover {
+                color: $color-base;
+            }
+            .subtitulo {
+                color: $color-base;
+                font-size: $font-enlace/1.25;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,32 @@
+
+/* Boton del Header */
+
+.header__Boton {
+    @include alto-ancho(8vh, 15vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .botonDeLogin {
+        @include boton-base($color-base, $color-secundario);
+        font-size: (($font-boton)/1.2);
+        font-weight: bolder;
+        @include alto-ancho(50%, 40%);
+        border: none;
+        border-radius: 10px;
+    }
+    .botonDeLogin:hover {
+        @include boton-base($color-secundario, $color-base);
+    }
+}
+
+/* Botones generales */
+
+.boton {
+    @include boton($color-base, $color-secundario, $color-terciario)
+}
+
+.boton:hover {
+    @include boton-base($color-secundario, $color-base);
+    box-shadow: $box-shadow-efecto $color-terciario;
+    cursor: pointer;
+}

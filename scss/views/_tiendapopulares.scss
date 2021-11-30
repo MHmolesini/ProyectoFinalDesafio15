@@ -1,0 +1,136 @@
+/* TIENDA POPULARES */
+
+.seccionTiendaPopulares {
+    width: 100vw;
+}
+
+.seccionTiendaPopulares__juegos {
+    @include alto-ancho(86vh, 100%);
+    display: grid;
+    grid-template-columns: repeat(12, 8.33333vw);
+    grid-template-rows: repeat(12, 7.166666vh);
+    .seccionTiendaPopulares__juegos__fondo1,
+    .seccionTiendaPopulares__juegos__fondo2 {
+        grid-column: 1/9;
+        grid-row: 1/13;
+        @include alto-ancho(86vh, 100vw);
+        clip-path: polygon(0% 0%, 66% 0%, 33% 100%, 0% 100%);
+        .fondos {
+            @include alto-ancho(100%, 100%);
+            object-fit: cover;
+        }
+    }
+    .seccionTiendaPopulares__juegos__fondo2 {
+        clip-path: polygon(0% 0%, 33% 0%, 66% 100%, 0% 100%);
+    }
+    .seccionTiendaPopulares__juegos__portada {
+        @include alto-ancho(450px, 300px);
+        grid-column: 2/3;
+        grid-row: 3/11;
+        z-index: 20;
+    }
+    .seccionTiendaPopulares__juegos__info1,
+    .seccionTiendaPopulares__juegos__info2 {
+        grid-column: 6/12;
+        grid-row: 2/11;
+        display: grid;
+        grid-template-columns: repeat(24, 2.083333333vw);
+        grid-template-rows: repeat(12, 5.375vh);
+        .parrafoPopulares {
+            font-weight: bold;
+            font-size: $font-enlace;
+        }
+        .boton {
+            background-color: $color-compras;
+            grid-column: 16/25;
+            grid-row: 11/13;
+            margin-top: 2.8rem;
+            margin-bottom: 0;
+        }
+        .boton:hover {
+            @include boton-base($color-secundario, $color-compras);
+        }
+    }
+    .seccionTiendaPopulares__juegos__info1 {
+        h2 {
+            grid-column: 11/25;
+            grid-row: 1/3;
+            margin-top: 0;
+        }
+        p:nth-child(2) {
+            grid-column: 10/25;
+            grid-row: 3/5;
+        }
+        p:nth-child(3) {
+            grid-column: 8/25;
+            grid-row: 5/6;
+            text-align: left;
+            margin: auto 0;
+        }
+        p:nth-child(4) {
+            grid-column: 6/25;
+            grid-row: 6/9;
+        }
+        p:nth-child(5) {
+            grid-column: 4/25;
+            grid-row: 9/10;
+            text-align: left;
+        }
+        p:nth-child(6) {
+            grid-column: 3/25;
+            grid-row: 10/11;
+            text-align: left;
+        }
+        p:nth-child(7) {
+            grid-column: 2/25;
+            grid-row: 11/12;
+            text-align: left;
+        }
+        p:nth-child(8) {
+            grid-column: 1/25;
+            grid-row: 12/13;
+            text-align: left;
+        }
+    }
+    .seccionTiendaPopulares__juegos__info2 {
+        h2 {
+            grid-column: 1/25;
+            grid-row: 1/3;
+            margin-top: 0;
+        }
+        p:nth-child(2) {
+            grid-column: 2/25;
+            grid-row: 3/5;
+        }
+        p:nth-child(3) {
+            grid-column: 3/25;
+            grid-row: 5/6;
+            text-align: left;
+            margin: auto 0;
+        }
+        p:nth-child(4) {
+            grid-column: 5/25;
+            grid-row: 6/9;
+        }
+        p:nth-child(5) {
+            grid-column: 6/25;
+            grid-row: 8/9;
+            text-align: left;
+        }
+        p:nth-child(6) {
+            grid-column: 7/25;
+            grid-row: 9/10;
+            text-align: left;
+        }
+        p:nth-child(7) {
+            grid-column: 8/25;
+            grid-row: 10/11;
+            text-align: left;
+        }
+        p:nth-child(8) {
+            grid-column: 9/25;
+            grid-row: 11/12;
+            text-align: left;
+        }
+    }
+}

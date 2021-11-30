@@ -1,0 +1,21 @@
+/* Portadas de los juegos */
+
+.portada {
+    @include alto-ancho(100%, 100%);
+    box-shadow: $box-shadow $color-terciario;
+}
+
+.portada:hover {
+    animation: efectoPortada 500ms ease both;
+    cursor: pointer;
+}
+
+@keyframes efectoPortada {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-14px);
+        box-shadow: $box-shadow-animacion $color-terciario;
+    }
+}

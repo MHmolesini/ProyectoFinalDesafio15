@@ -1,0 +1,277 @@
+/* Media Queries */
+
+/* 0px a 480px */
+
+@media screen and (max-width:480px) {
+
+    /* Header */
+
+    .header {
+        .header__logo {
+            width: 25vw;
+            a {
+                img:nth-child(1) {
+                    display: none;
+                }
+                img:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+        .header__nav {
+            flex-direction: column;
+            height: 8vh;
+            > ul {
+                @include alto-ancho(8vh, 50vw);
+                flex-wrap: wrap;
+                > li {
+                    @include alto-ancho(50%, 50%);
+                    > a {
+                        font-size: 1rem;
+                        line-height: 1rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .header__Boton {
+            width: 25vw;
+            .botonDeLogin {
+                width: 100%;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* segundo menu */
+
+    main {
+        .segundoMenu {
+            .listaSubMenu {
+                width: 100vw;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    width: 33vw;
+                    a {
+                        font-size: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Main */
+
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    width: 70vw;
+                    h1 {
+                        font-size: 3rem;
+                        width: 70vw;
+                    }
+                    p {
+                        font-size: 1rem;
+                        width: 70vw;
+                    }
+                    div {
+                        width: 70vw;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .boton {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Noticias */
+
+    .noticias {
+        .noticias__seccion {
+            .noticias__seccion__articulos {
+                display: block;
+                div {
+                    width: 80vw;
+                    height: 400px;
+                    display: inline-block;
+                    img {
+                        margin: 1rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Sobre nosotros */
+
+    /* fondo */
+
+    .sobreNosotros {
+        .sobreNosotros__fondo {
+            div {
+                p {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+
+    /* Main */
+
+    .sobreNosotros {
+        .sobreNosotros__seccion {
+            width: 80vw;
+            display: block;
+            .sobreNosotros__seccion__contenedor {
+                display: block;
+                img {
+                    width: 80vw;
+                    height: 300px;
+                    margin: 1rem 0rem;
+                }
+                div {
+                    width: 80vw;
+                    height: 400px;
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+    }
+
+    /* Contacto */
+
+
+    .contacto {
+        .contacto__fondo {
+            div {
+                p {
+                    width: 80vw;
+                }
+            }
+        }
+        .contacto__seccion {
+            .contacto__seccion__formulario1 {
+                border-radius: 40px;
+                margin-bottom: 2rem;
+            }
+            .contacto__seccion__formulario2 {
+                width: 70vw;
+                border-radius: 40px;
+                div:nth-child(5) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .boton {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer */
+
+    .footer {
+        height: 20vh;
+        .footer__logo {
+            a {
+                img:nth-child(1) {
+                    display: none;
+                }
+                img:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+        .footer__enlace {
+            height: 80%;
+            ul {
+                flex-direction: column;
+                width: 50vw;
+                height: 2rem;
+                li {
+                    @include alto-ancho(1.7rem, 100%);
+                    a {
+                        font-size: 1rem;
+                    } 
+                }
+            }
+        }
+        .footer__redes {
+            flex-direction: column;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    /* TIENDA */
+
+    /* SubMenu */
+
+    .listaSubMenu {
+        width: 100%;
+        display: flex;
+        li {
+            @include alto-ancho(100%, 100vw);
+            a {
+                width: 33vw;
+            }
+        }
+    }
+
+    /* Marcas */
+
+    .seccionMarcas__logos {
+        gap: 10vw;
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    /* generos */
+
+    .seccionGeneros {
+        .seccionGeneros__contenedor {
+            flex-direction: column;
+            .seccionGeneros__contenedor__generos {
+                width: 100%;
+            }
+        }
+    }
+
+    /* TIENDA MARCAS */
+
+    main .seccionTiendaMarcas .seccionTiendaMarcas__logo {
+        width: 40vw; 
+    }
+
+    .modal-content {
+        height: 100%;
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            div:nth-child(1) {
+                height: 80vh;
+                img {
+                    @include alto-ancho(70%, 70%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+/* Footer */
+
+.footer {
+    height: 15vh;
+    background-color: $color-terciario;
+    .footer__logo {
+        @include alto-ancho(8vh, 15vw);
+        img {
+            height: 100%;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+    }
+    .footer__enlace {
+        height: 100%;
+        ul {
+            @include alto-ancho(15vh, 56vw);
+            li {
+                @include alto-ancho(15vh, 14vw);
+                a {
+                    height: 100%;
+                    color: $color-secundario;
+                    font-size: $font-enlace;
+                    font-weight: bolder;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .footer__redes {
+        @include alto-ancho(5vh, 15vw);
+        display: flex;
+        div {
+            height: 100%;
+            img {
+                height: 100%;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+    p {
+        background-color: $color-terciario;
+        font-style: italic;
+        width: 100vw;
+        text-align: center;
+        color: $color-secundario;
+    }
+}

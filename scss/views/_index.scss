@@ -1,0 +1,105 @@
+/* Main */
+
+/* Primera Seccion */
+
+main {
+    div {
+        .boton {
+            margin: 3vh auto;
+        }
+    }
+}
+
+#carouselExampleCaptions {
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 92vh;
+                object-fit: cover;
+            }
+            div {
+                @include alto-ancho(100%, 60vw);
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    height: 33%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    font-size: $font-titulo*(4/3);
+                }
+                p {
+                    height: 33%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-shadow: $box-shadow-carousel $color-terciario;
+                    font-size: 1.25rem;
+                }
+                div {
+                    @include alto-ancho(33%, 70%);
+                    display: flex;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
+
+/* Segunda Seccion */
+
+div {
+    text-align: center;
+}
+
+.segundaSeccion {
+    div {
+        display: inline-block;
+        margin: 0 2vw;
+        @include alto-ancho(330px, 220px);
+        margin-bottom: 4rem;
+        .nombreDeJuego {
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+/* Tercera Seccion */
+
+main {
+    .terceraSeccion {
+        .noticia {
+            @include alto-ancho(500px, 400px);
+            margin: auto;
+            div {
+                height: 500px;
+            }
+            img {
+                @include alto-ancho(100%, 100%);
+                box-shadow: $box-shadow $color-terciario;
+                background-color: #ddd;
+            }
+            img:hover {
+                animation: efectoNoticiaIndex 600ms both;
+            }
+            p {
+                margin: 0.9rem;
+            }
+        }
+    }
+}
+
+@keyframes efectoNoticiaIndex {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+        box-shadow: $box-shadow-animacion $color-terciario;
+    }
+}
+
