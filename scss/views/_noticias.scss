@@ -10,14 +10,15 @@
         .noticias__seccion__articulos {
             width: 100vw;
             margin: 0 auto;
-            display: inline-block;
+            // display: inline-block;
             // grid-template-columns: repeat(12, 1fr);
             // grid-template-rows: repeat(15, 100px);
             // gap: 2rem;
             div {
-                display: inline-block;
+                // display: inline-block;
                 height: 40vh;
-                width: 50vw;
+                width: 40vw;
+                margin-bottom: 8rem;
                 a {
                     @include alto-ancho(100%, 100%);
                 }
@@ -169,6 +170,32 @@
         }
     }
 }
+
+.noticiasModal {
+    height: 70vh;
+    .noticiasModal__contenido {
+        height: 100%;
+        // column-count: 1;
+        h4 {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        p {
+            display: block;
+            text-indent: 40px;
+            text-align: justify;
+            line-height: 1.75rem;
+            padding-bottom: 1rem;
+        }
+        ul {
+            li {
+                // list-style: disc;
+                text-align: left;
+                
+            }
+        }
+    }
+}  
 
 
 
