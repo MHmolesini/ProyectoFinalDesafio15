@@ -72,6 +72,9 @@ div {
 
 main {
     .terceraSeccion {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         .noticia {
             @include alto-ancho(500px, 30vw);
             margin: auto;
@@ -89,6 +92,8 @@ main {
             }
             p {
                 margin: 0.9rem;
+                font-weight: 600;
+                text-transform: uppercase;
             }
         }
     }

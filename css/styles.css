@@ -263,22 +263,28 @@ div {
     line-height: 2.5rem; }
 
 /* Tercera Seccion */
-main .terceraSeccion .noticia {
-  height: 500px;
-  width: 30vw;
-  margin: auto; }
-  main .terceraSeccion .noticia div {
-    height: 500px; }
-  main .terceraSeccion .noticia img {
-    height: 100%;
-    width: 100%;
-    box-shadow: 2px 2px 7px black;
-    background-color: #ddd;
-    object-fit: cover; }
-  main .terceraSeccion .noticia img:hover {
-    animation: efectoNoticiaIndex 600ms both; }
-  main .terceraSeccion .noticia p {
-    margin: 0.9rem; }
+main .terceraSeccion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  main .terceraSeccion .noticia {
+    height: 500px;
+    width: 30vw;
+    margin: auto; }
+    main .terceraSeccion .noticia div {
+      height: 500px; }
+    main .terceraSeccion .noticia img {
+      height: 100%;
+      width: 100%;
+      box-shadow: 2px 2px 7px black;
+      background-color: #ddd;
+      object-fit: cover; }
+    main .terceraSeccion .noticia img:hover {
+      animation: efectoNoticiaIndex 600ms both; }
+    main .terceraSeccion .noticia p {
+      margin: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase; }
 
 @keyframes efectoNoticiaIndex {
   0% {
@@ -849,7 +855,7 @@ main .contacto__fondo {
 
 /* Media Queries */
 /* 0px a 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   /* Header */
   .header .header__logo {
     width: 25vw; }
@@ -871,6 +877,8 @@ main .contacto__fondo {
           font-size: 1rem;
           line-height: 1rem;
           height: 100%; }
+    .header .header__nav ul li:hover .subMenu {
+      display: none; }
   .header .header__Boton {
     width: 25vw; }
     .header .header__Boton .botonDeLogin {
@@ -911,18 +919,33 @@ main .contacto__fondo {
         display: flex;
         justify-content: center;
         align-items: center; }
+  /* Noticias index */
+  main .terceraSeccion {
+    display: flex;
+    flex-direction: column; }
+    main .terceraSeccion .noticia {
+      height: 450px;
+      width: 90vw; }
   /* Noticias */
+  iframe {
+    width: 90vw;
+    height: 56.25vw;
+    margin: auto; }
   .noticias .noticias__seccion .noticias__seccion__articulos {
-    display: block; }
+    display: inline-block; }
     .noticias .noticias__seccion .noticias__seccion__articulos div {
-      width: 80vw;
-      height: 400px;
-      display: inline-block; }
+      width: 100vw;
+      display: block; }
       .noticias .noticias__seccion .noticias__seccion__articulos div img {
         margin: 1rem 0rem; }
+      .noticias .noticias__seccion .noticias__seccion__articulos div h4 {
+        margin: 3rem auto; }
   /* Sobre nosotros */
   /* fondo */
+  .sobreNosotros .sobreNosotros__fondo div h1 {
+    font-size: 3rem; }
   .sobreNosotros .sobreNosotros__fondo div p {
+    font-size: 0.9rem;
     width: 80vw; }
   /* Main */
   .sobreNosotros .sobreNosotros__seccion {
@@ -939,20 +962,69 @@ main .contacto__fondo {
         height: 400px;
         margin: 1rem 0rem; }
   /* Contacto */
+  .contacto .contacto__fondo div h1 {
+    font-size: 3rem; }
   .contacto .contacto__fondo div p {
+    font-size: 0.9rem;
     width: 80vw; }
-  .contacto .contacto__seccion .contacto__seccion__formulario1 {
-    border-radius: 40px;
-    margin-bottom: 2rem; }
-  .contacto .contacto__seccion .contacto__seccion__formulario2 {
-    width: 70vw;
-    border-radius: 40px; }
-    .contacto .contacto__seccion .contacto__seccion__formulario2 div:nth-child(5) {
+  .contacto .contacto__seccion {
+    width: 80vw; }
+    .contacto .contacto__seccion .contacto__seccion__formulario1 {
+      width: 80vw;
+      border-radius: 40px;
+      margin-bottom: 2rem; }
+      .contacto .contacto__seccion .contacto__seccion__formulario1 .contacto__seccion__formulario1__redes {
+        height: 5rem;
+        width: 100%; }
+        .contacto .contacto__seccion .contacto__seccion__formulario1 .contacto__seccion__formulario1__redes div img {
+          width: 4rem; }
+    .contacto .contacto__seccion .contacto__seccion__formulario2 {
+      width: 80vw;
+      border-radius: 40px; }
+      .contacto .contacto__seccion .contacto__seccion__formulario2 div:nth-child(5) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .contacto .contacto__seccion .contacto__seccion__formulario2 div:nth-child(5) .boton {
+          width: 80%; }
+  /* TIENDA POPULARES */
+  .seccionTiendaPopulares__juegos {
+    height: 180vh;
+    width: 100%;
+    /*172*/
+    display: grid;
+    grid-template-columns: repeat(12, 8.33333vw);
+    grid-template-rows: repeat(24, 7.16667vh); }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1,
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 {
+      grid-column: 1/9;
+      grid-row: 1/25;
+      clip-path: polygon(0% 0%, 100% 0%, 33% 100%, 0% 100%); }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 {
+      clip-path: polygon(0% 0%, 33% 0%, 100% 100%, 0% 100%); }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__portada {
+      height: 50vh;
+      width: 33.33333vh;
+      grid-column: 4/10;
+      grid-row: 3/11; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1,
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 {
+      grid-column: 2/12;
+      grid-row: 13/25;
       display: flex;
       flex-direction: column;
-      justify-content: space-around; }
-      .contacto .contacto__seccion .contacto__seccion__formulario2 div:nth-child(5) .boton {
-        width: 80%; }
+      max-width: 100vw; }
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 h2,
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 h2 {
+        font-size: 3rem;
+        margin: 0; }
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 .boton,
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 .boton {
+        grid-row: 13/25;
+        margin-top: 0rem; }
+  /* TIENDA GENEROS */
+  .tiendaGeneros .tiendaGeneros__section div h3 {
+    font-size: 3rem; }
   /* Footer */
   .footer {
     height: 20vh; }
@@ -972,7 +1044,8 @@ main .contacto__fondo {
           .footer .footer__enlace ul li a {
             font-size: 1rem; }
     .footer .footer__redes {
-      flex-direction: column; }
+      flex-direction: column;
+      height: 4vh; }
     .footer p {
       font-size: 0.8rem; }
   /* TIENDA */
