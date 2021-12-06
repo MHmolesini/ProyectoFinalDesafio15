@@ -1,0 +1,237 @@
+/* Media Queries */
+
+/* 0px a 360px */
+
+@media screen and (max-width:360px) {
+
+    /* Header */
+
+    .header {
+        .header__nav {
+            >ul {
+                >li {
+                    >a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .header__Boton {
+            .botonDeLogin {
+                width: 80%;
+            }
+        }
+    }
+
+    /* Main */
+
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                div {
+                    h1 {
+                        font-size: 2.25rem;
+                        width: 90vw;
+                    }
+                    p {
+                        width: 80vw;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Noticias index */
+
+    main {
+        .terceraSeccion {
+            .noticia {
+                @include alto-ancho(400px, 90vw);
+            }
+        }
+    }
+
+    /* Footer */
+
+    .footer {
+        .footer__enlace {
+            ul {
+                li {
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* TIENDA */
+
+    /* Segundo Menu */
+
+    main {
+        .segundoMenu {
+            .listaSubMenu {
+                li {
+                    a {
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* NOTICIAS */
+
+    iframe {
+        width: 80vw;
+        height: 80vw*(9/16);
+    }
+
+    .noticias {
+        .noticias__seccion {
+            .noticias__seccion__articulos {
+                div {
+                    width: 90vw;
+                    margin-bottom: 10rem;
+                    div {
+                        width: 100%;
+                        margin: 1rem auto;
+                    }
+                    h4 {
+                        margin: 2rem auto;
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* SOBRE NOSOTROS */
+
+    /* fondo */
+
+    .sobreNosotros {
+        .sobreNosotros__fondo {
+            div {
+                h1 {
+                    width: 90vw;
+                }
+                p {
+                    font-size: 0.9rem;
+                    width: 90vw;
+                }
+            }
+        }
+    }
+
+    /* Main */
+
+    .sobreNosotros {
+        .sobreNosotros__seccion {
+            .sobreNosotros__seccion__contenedor {
+                img {
+                    height: 35vh;
+                }
+                div {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTACTO */
+
+    /* Fondo */
+
+    .contacto {
+        .contacto__fondo {
+            div {
+                p {
+                    width: 90vw;
+                }
+            }
+        }
+        .contacto__seccion {
+            width: 90vw;
+            .contacto__seccion__formulario1,
+            .contacto__seccion__formulario2 {
+                border-radius: 30px;
+            }
+            .contacto__seccion__formulario2 {
+                .form-group {
+                    input,
+                    textarea {
+                        border-radius: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* TIENDA GENEROS */
+
+    .tiendaGeneros {
+        .tiendaGeneros__section {
+            div {
+                h3 {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    /* TIENDA MARCAS */
+
+    main .seccionTiendaMarcas .seccionTiendaMarcas__logo {
+        width: 50vw; 
+        img {
+            height: 7rem;
+            margin: 1rem auto;
+        }
+    }
+
+    .modal-content {
+        height: 100%;
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            div:nth-child(1) {
+                height: 75vh;
+                img {
+                    @include alto-ancho(75%, 80%);
+                }
+            }
+        }
+    }
+
+    /* TIENDA POPULARES */
+
+    .seccionTiendaPopulares__juegos {
+        height: 215vh;
+        display: grid;
+        grid-template-columns: repeat(12, 8.33333vw);
+        grid-template-rows: repeat(30, 7.166666vh);
+        .seccionTiendaPopulares__juegos__portada {
+            @include alto-ancho(57vh, (100vw*(2/3)));
+            grid-column: 3/10;
+            grid-row: 2/11;
+            .boton {
+                width: 66vw;
+            }
+        }
+        .seccionTiendaPopulares__juegos__info1,
+        .seccionTiendaPopulares__juegos__info2 {
+            grid-row: 13/30;
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+
+}
