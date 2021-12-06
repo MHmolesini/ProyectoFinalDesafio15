@@ -498,7 +498,7 @@ main .carouselTienda .carousel-inner .carousel-item {
 
 main .sobreNosotros__fondo,
 main .contacto__fondo {
-  background-image: url("../media/images/fondos/imgfondo1-farCry6.jpg");
+  background-image: url("../media/images/fondos/control-de-videojuegos-colorido_3840x2160_xtrafondos.com.jpg");
   background-size: cover;
   width: 100vw;
   height: 60vh; }
@@ -525,6 +525,9 @@ main .contacto__fondo {
       display: flex;
       align-items: center;
       text-align: center; }
+
+main .contacto__fondo {
+  background-image: url("../media/images/fondos/battlefield-2042_5120x2880_xtrafondos.com.jpg"); }
 
 /* SOBRE NOSOTROS */
 /* Segunda Seccion */
