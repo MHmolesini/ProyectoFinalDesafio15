@@ -524,10 +524,13 @@ main .contacto__fondo {
       text-shadow: 3px 3px 7px black;
       display: flex;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      font-size: 1.5rem; }
 
 main .contacto__fondo {
   background-image: url("../media/images/fondos/battlefield-2042_5120x2880_xtrafondos.com.jpg"); }
+  main .contacto__fondo div h1 {
+    align-items: center; }
 
 /* SOBRE NOSOTROS */
 /* Segunda Seccion */
@@ -542,6 +545,8 @@ main .contacto__fondo {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr); }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div p {
+      font-size: 1.5rem; }
     .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div:hover {
       animation: efectoNosotros 600ms ease both; }
   .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(1) img,

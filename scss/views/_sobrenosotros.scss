@@ -13,6 +13,11 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10, 1fr);
+        div {
+            p {
+                font-size: 1.5rem;
+            }
+        }
         div:hover {
             animation: efectoNosotros 600ms ease both;
         }

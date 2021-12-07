@@ -58,11 +58,17 @@ main {
                 display: flex;
                 align-items: center;
                 text-align: center;
+                font-size: 1.5rem;
             }
         }
     }
     .contacto__fondo {
         background-image: url("../media/images/fondos/battlefield-2042_5120x2880_xtrafondos.com.jpg");
+        div {
+            h1 {
+                align-items: center;
+            }
+        }
     }
 }
 
