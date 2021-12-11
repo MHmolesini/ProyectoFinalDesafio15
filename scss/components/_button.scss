@@ -30,3 +30,7 @@
     box-shadow: $box-shadow-efecto $color-terciario;
     cursor: pointer;
 }
+
+.boton--comprar:hover {
+    @include boton-base($color-secundario, $color-compras)
+}
