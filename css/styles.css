@@ -797,21 +797,27 @@ main .contacto__fondo {
   .modal-content .modal-body {
     height: 100%; }
     .modal-content .modal-body div:nth-child(1) {
-      height: 50vh;
-      width: 100%; }
+      height: 55vh;
+      width: 30%;
+      margin: 0 auto; }
       .modal-content .modal-body div:nth-child(1) img {
         height: 80%;
         width: 80%; }
-      .modal-content .modal-body div:nth-child(1) .boton {
-        background-color: #00C248;
-        color: white;
-        width: 80%; }
-      .modal-content .modal-body div:nth-child(1) .boton:hover {
-        background-color: white;
-        color: #00C248; }
-    .modal-content .modal-body .parrafoPopulares {
-      font-weight: bold;
-      text-align: left; }
+      .modal-content .modal-body div:nth-child(1) div {
+        margin: 0 auto; }
+        .modal-content .modal-body div:nth-child(1) div .boton {
+          background-color: #00C248;
+          color: white;
+          width: 100%; }
+        .modal-content .modal-body div:nth-child(1) div .boton:hover {
+          background-color: white;
+          color: #00C248; }
+    .modal-content .modal-body div:nth-child(2) {
+      height: 55vh;
+      width: 70%;
+      justify-content: space-around; }
+      .modal-content .modal-body div:nth-child(2) .parrafoPopulares {
+        text-align: left; }
 
 /* Footer */
 .footer {

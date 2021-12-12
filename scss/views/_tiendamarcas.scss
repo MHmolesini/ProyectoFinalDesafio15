@@ -19,21 +19,28 @@
     .modal-body {
         height: 100%;
         div:nth-child(1) {
-            @include alto-ancho(50vh, 100%);
+            @include alto-ancho(55vh, 30%);
+            margin: 0 auto;
             img {
                 @include alto-ancho(80%, 80%);
             }
-            .boton {
-                @include boton-base($color-compras, $color-secundario);
-                width: 80%;
-            }
-            .boton:hover {
-                @include boton-base($color-secundario, $color-compras);
+            div {
+                margin: 0 auto;
+                .boton {
+                    @include boton-base($color-compras, $color-secundario);
+                    width: 100%;
+                }
+                .boton:hover {
+                    @include boton-base($color-secundario, $color-compras);
+                }
             }
         }
-        .parrafoPopulares {
-            font-weight: bold;
-            text-align: left;
+        div:nth-child(2) {
+            @include alto-ancho(55vh, 70%);
+            justify-content: space-around;
+            .parrafoPopulares {
+                text-align: left;
+            }
         }
     }
 }  
