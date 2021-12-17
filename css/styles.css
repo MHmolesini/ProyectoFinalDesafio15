@@ -383,8 +383,7 @@ main .terceraSeccion {
 /* TIENDA */
 /* Segundo Menu */
 main .segundoMenu {
-  height: 6vh;
-  width: 100vw; }
+  height: 6vh; }
   main .segundoMenu .listaSubMenu {
     height: 100%;
     width: 56vw;
@@ -452,7 +451,6 @@ main .carouselTienda .carousel-inner .carousel-item {
   text-shadow: 2px 2px 7px gray; }
 
 .noticias .noticias__seccion .noticias__seccion__articulos {
-  width: 100vw;
   margin: 0 auto; }
   .noticias .noticias__seccion .noticias__seccion__articulos div {
     height: 40vh;
@@ -482,20 +480,22 @@ main .carouselTienda .carousel-inner .carousel-item {
     width: 80%;
     margin: 2rem auto; }
 
-.noticiasModal {
-  height: 70vh; }
-  .noticiasModal .noticiasModal__contenido {
-    height: 100%; }
-    .noticiasModal .noticiasModal__contenido h4 {
+.modal .modal-dialog .noticiasModal {
+  height: 70vh;
+  width: 70vw; }
+  .modal .modal-dialog .noticiasModal .noticiasModal__contenido {
+    height: 100%;
+    width: 70vw; }
+    .modal .modal-dialog .noticiasModal .noticiasModal__contenido h4 {
       font-weight: 500;
       margin-bottom: 1rem; }
-    .noticiasModal .noticiasModal__contenido p {
+    .modal .modal-dialog .noticiasModal .noticiasModal__contenido p {
       display: block;
       text-indent: 40px;
       text-align: justify;
       line-height: 1.75rem;
       padding-bottom: 1rem; }
-    .noticiasModal .noticiasModal__contenido ul li {
+    .modal .modal-dialog .noticiasModal .noticiasModal__contenido ul li {
       text-align: left; }
 
 @keyframes efectoNoticias {
@@ -509,7 +509,6 @@ main .sobreNosotros__fondo,
 main .contacto__fondo {
   background-image: url("../media/images/fondos/control-de-videojuegos-colorido_3840x2160_xtrafondos.com.jpg");
   background-size: cover;
-  width: 100vw;
   height: 60vh; }
   main .sobreNosotros__fondo div,
   main .contacto__fondo div {
@@ -667,14 +666,11 @@ main .contacto__fondo {
         color: #00C248; }
 
 /* TIENDA POPULARES */
-.seccionTiendaPopulares {
-  width: 100vw; }
-
 .seccionTiendaPopulares__juegos {
   height: 86vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 8.33333vw);
+  grid-template-columns: repeat(12, 8.23333vw);
   grid-template-rows: repeat(12, 7.16667vh); }
   .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1,
   .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 {

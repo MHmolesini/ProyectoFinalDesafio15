@@ -4,7 +4,8 @@
 
 main {
     .segundoMenu {
-        @include alto-ancho(6vh, 100vw);
+        // @include alto-ancho(6vh, 100vw);
+        height: 6vh;
         .listaSubMenu {
             @include alto-ancho(100%, 56vw);
             display: flex;

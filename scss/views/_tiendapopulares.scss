@@ -1,13 +1,13 @@
 /* TIENDA POPULARES */
 
 .seccionTiendaPopulares {
-    width: 100vw;
+    // width: 100vw;
 }
 
 .seccionTiendaPopulares__juegos {
     @include alto-ancho(86vh, 100%);
     display: grid;
-    grid-template-columns: repeat(12, 8.33333vw);
+    grid-template-columns: repeat(12, 8.23333vw);
     grid-template-rows: repeat(12, 7.166666vh);
     .seccionTiendaPopulares__juegos__fondo1,
     .seccionTiendaPopulares__juegos__fondo2 {
