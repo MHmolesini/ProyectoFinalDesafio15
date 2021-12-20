@@ -1,0 +1,156 @@
+/* Media Queries */
+
+/* 0px a 1464px */
+
+@media screen and (max-width:1464px) {
+
+    /* Header */
+    /* SubMenu */
+
+    .header {
+        .header__nav {
+            ul {
+                li:hover {
+                    .subMenu {
+                        .subMenuCategorias {
+                            .subMenu__Categorias__seccion {
+                                ul {
+                                    li {
+                                        .subtitulo {
+                                            font-size: 2vh;
+                                            padding: 0.4rem 0rem;
+
+                                        }
+                                        a {
+                                            font-size: 1.25vh;
+                                            line-height: 2.25vh;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .subMenuPopulares {
+                            .portadasSubMenu {
+                                .portadaSubMenuPopulares {
+                                    img {
+                                        width: 10vw;
+                                        height: 25vh;
+                                        margin: 0rem 0.8rem;
+                                    }
+                                    p {
+                                        font-size: 2vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* NOTICIAS */
+
+    .modal {
+        .modal-dialog {
+            width: 70vw;
+            margin: 0 auto;
+        }
+    }
+
+    /* SOBRE NOSOTROS */
+
+    /* Main */
+
+    .sobreNosotros__seccion {
+        width: 80vw;
+        .sobreNosotros__seccion__contenedor {
+            div {
+                p {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+
+
+    /* CONTACTO */
+
+    .contacto {
+        .contacto__fondo {
+            div {
+                h1 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 0.9rem;
+                    width: 80vw;
+                }
+            }
+        }
+        .contacto__seccion {
+            width: 80vw;
+            .contacto__seccion__formulario1 {
+                width: 50%;
+                border-radius: 40px 0px 0px 40px;
+            }
+            div {
+                width: 50%;
+                .contacto__seccion__formulario2 {
+                    width: 100%;
+                    border-radius: 0px 40px 40px 0px;
+                }
+            }
+        }
+    }
+
+    /* TIENDA POPULARES */
+
+    .seccionTiendaPopulares__juegos {
+        .seccionTiendaPopulares__juegos__portada {
+            @include alto-ancho(50vh, 20vw);
+        }
+        .seccionTiendaPopulares__juegos__info1,
+        .seccionTiendaPopulares__juegos__info2 {
+            h2 {
+                font-size: $font-titulo+0.5vh;
+            }
+            p {
+                font-size: $font-enlace;
+            }
+            .parrafoPopulares {
+                font-size: $font-enlace;
+            }
+        }
+    }
+
+    /* TIENDA MARCAS */
+
+    .modal-content {
+        height: 90vh;
+        .modal-body {
+            height: 100%;
+            div:nth-child(1){
+                height: 80vh;
+                img {
+                    max-height: 45vh;
+                    min-height: 40vh;
+                }
+            }
+            div:nth-child(2) {
+                height: 80vh;
+                h2 {
+                    font-size: 5vh;
+                }
+                p {
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+

@@ -24,7 +24,7 @@ a {
 /* Alto y ancho */
 /* Titulos */
 h1, h2, h3 {
-  font-size: 3rem;
+  font-size: 4.8vh;
   color: white;
   text-transform: uppercase;
   text-shadow: 5px 5px 9px black;
@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-weight: bolder; }
 
 h2, h3 {
-  font-size: 3rem;
+  font-size: 4.8vh;
   color: black;
   text-shadow: 2px 2px 7px gray;
   margin: 3vh auto; }
@@ -109,7 +109,7 @@ h2, h3 {
       .header .header__nav > ul > li > a {
         height: 100%;
         color: white;
-        font-size: 1.25rem;
+        font-size: 2vh;
         font-weight: bolder;
         display: flex;
         align-items: center;
@@ -169,17 +169,17 @@ h2, h3 {
           flex-basis: 3%; }
           .header .header__nav ul li:hover .subMenu .subMenuCategorias .subMenu__Categorias__seccion ul li .subtitulo {
             color: #816afe;
-            font-size: 1.105rem;
+            font-size: 2vh;
             font-weight: 600;
             text-transform: uppercase;
             text-decoration: none;
-            padding: 0.9rem 0rem; }
+            padding: 0.4rem 0rem; }
           .header .header__nav ul li:hover .subMenu .subMenuCategorias .subMenu__Categorias__seccion ul li a {
             color: black;
             font-weight: 500;
             text-transform: uppercase;
-            font-size: 0.7rem;
-            line-height: 1.25rem; }
+            font-size: 1.25vh;
+            line-height: 2.25vh; }
           .header .header__nav ul li:hover .subMenu .subMenuCategorias .subMenu__Categorias__seccion ul li a:hover {
             color: #816afe; }
   .header .header__nav ul li:hover .subMenu .subMenuCategorias .contenedorClass, .header .header__nav ul li:hover .subMenu .subMenuPopulares .contenedorClass {
@@ -213,12 +213,13 @@ h2, h3 {
         background-color: #ccc;
         margin: 0px 2rem;
         width: 8vw;
-        height: 225px;
+        height: 25vh;
         box-shadow: 2px 2px 7px black; }
       .header .header__nav ul li:hover .subMenu .subMenuPopulares .portadasSubMenu .portadaSubMenuPopulares p {
         text-align: center;
         text-transform: uppercase;
-        font-weight: 600; }
+        font-weight: 600;
+        font-size: 2vh; }
 
 /* Main */
 /* Primera Seccion */
@@ -241,7 +242,7 @@ main div .boton {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 4rem; }
+    font-size: 6.4vh; }
   #carouselExampleCaptions .carousel-inner .carousel-item div p {
     height: 33%;
     display: flex;
@@ -397,7 +398,7 @@ main .segundoMenu {
       main .segundoMenu .listaSubMenu li a {
         color: #816afe;
         height: 100%;
-        font-size: 1.25rem;
+        font-size: 2vh;
         font-weight: bolder;
         display: flex;
         align-items: center;
@@ -440,7 +441,7 @@ main .carouselTienda .carousel-inner .carousel-item {
       color: #816afe; }
     .seccionGeneros .seccionGeneros__contenedor .seccionGeneros__contenedor__generos .subtitulo {
       color: #816afe;
-      font-size: 1rem;
+      font-size: 1.6vh;
       font-weight: 600;
       text-transform: uppercase; }
 
@@ -480,23 +481,26 @@ main .carouselTienda .carousel-inner .carousel-item {
     width: 80%;
     margin: 2rem auto; }
 
-.modal .modal-dialog .noticiasModal {
-  height: 70vh;
-  width: 70vw; }
-  .modal .modal-dialog .noticiasModal .noticiasModal__contenido {
-    height: 100%;
+.modal .modal-dialog {
+  width: 70vw;
+  margin: 0 auto; }
+  .modal .modal-dialog .noticiasModal {
+    height: 70vh;
     width: 70vw; }
-    .modal .modal-dialog .noticiasModal .noticiasModal__contenido h4 {
-      font-weight: 500;
-      margin-bottom: 1rem; }
-    .modal .modal-dialog .noticiasModal .noticiasModal__contenido p {
-      display: block;
-      text-indent: 40px;
-      text-align: justify;
-      line-height: 1.75rem;
-      padding-bottom: 1rem; }
-    .modal .modal-dialog .noticiasModal .noticiasModal__contenido ul li {
-      text-align: left; }
+    .modal .modal-dialog .noticiasModal .noticiasModal__contenido {
+      height: 100%;
+      width: 70vw; }
+      .modal .modal-dialog .noticiasModal .noticiasModal__contenido h4 {
+        font-weight: 500;
+        margin-bottom: 1rem; }
+      .modal .modal-dialog .noticiasModal .noticiasModal__contenido p {
+        display: block;
+        text-indent: 40px;
+        text-align: justify;
+        line-height: 1.75rem;
+        padding-bottom: 1rem; }
+      .modal .modal-dialog .noticiasModal .noticiasModal__contenido ul li {
+        text-align: left; }
 
 @keyframes efectoNoticias {
   0% {
@@ -701,7 +705,7 @@ main .contacto__fondo {
     grid-template-rows: repeat(18, 4vh); }
     .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 .parrafoPopulares,
     .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 .parrafoPopulares {
-      font-size: 1.25rem;
+      font-size: 2vh;
       text-transform: uppercase; }
     .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 .boton,
     .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 .boton {
@@ -845,7 +849,7 @@ main .contacto__fondo {
         .footer .footer__enlace ul li a {
           height: 100%;
           color: white;
-          font-size: 1.25rem;
+          font-size: 2vh;
           font-weight: bolder;
           display: flex;
           align-items: center;
@@ -865,6 +869,79 @@ main .contacto__fondo {
     width: 100vw;
     text-align: center;
     color: white; }
+
+/* Media Queries */
+/* 0px a 1464px */
+@media screen and (max-width: 1464px) {
+  /* Header */
+  /* SubMenu */
+  .header .header__nav ul li:hover .subMenu .subMenuCategorias .subMenu__Categorias__seccion ul li .subtitulo {
+    font-size: 2vh;
+    padding: 0.4rem 0rem; }
+  .header .header__nav ul li:hover .subMenu .subMenuCategorias .subMenu__Categorias__seccion ul li a {
+    font-size: 1.25vh;
+    line-height: 2.25vh; }
+  .header .header__nav ul li:hover .subMenu .subMenuPopulares .portadasSubMenu .portadaSubMenuPopulares img {
+    width: 10vw;
+    height: 25vh;
+    margin: 0rem 0.8rem; }
+  .header .header__nav ul li:hover .subMenu .subMenuPopulares .portadasSubMenu .portadaSubMenuPopulares p {
+    font-size: 2vh; }
+  /* NOTICIAS */
+  .modal .modal-dialog {
+    width: 70vw;
+    margin: 0 auto; }
+  /* SOBRE NOSOTROS */
+  /* Main */
+  .sobreNosotros__seccion {
+    width: 80vw; }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div p {
+      font-size: 1.35rem; }
+  /* CONTACTO */
+  .contacto .contacto__fondo div h1 {
+    font-size: 3rem; }
+  .contacto .contacto__fondo div p {
+    font-size: 0.9rem;
+    width: 80vw; }
+  .contacto .contacto__seccion {
+    width: 80vw; }
+    .contacto .contacto__seccion .contacto__seccion__formulario1 {
+      width: 50%;
+      border-radius: 40px 0px 0px 40px; }
+    .contacto .contacto__seccion div {
+      width: 50%; }
+      .contacto .contacto__seccion div .contacto__seccion__formulario2 {
+        width: 100%;
+        border-radius: 0px 40px 40px 0px; }
+  /* TIENDA POPULARES */
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__portada {
+    height: 50vh;
+    width: 20vw; }
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 h2,
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 h2 {
+    font-size: 5.3vh; }
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p,
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p {
+    font-size: 2vh; }
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 .parrafoPopulares,
+  .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 .parrafoPopulares {
+    font-size: 2vh; }
+  /* TIENDA MARCAS */
+  .modal-content {
+    height: 90vh; }
+    .modal-content .modal-body {
+      height: 100%; }
+      .modal-content .modal-body div:nth-child(1) {
+        height: 80vh; }
+        .modal-content .modal-body div:nth-child(1) img {
+          max-height: 45vh;
+          min-height: 40vh; }
+      .modal-content .modal-body div:nth-child(2) {
+        height: 80vh; }
+        .modal-content .modal-body div:nth-child(2) h2 {
+          font-size: 5vh; }
+        .modal-content .modal-body div:nth-child(2) p {
+          font-size: 2vh; } }
 
 /* Media Queries */
 /* 0px a 576px */
@@ -1173,10 +1250,13 @@ main .contacto__fondo {
       display: flex;
       flex-direction: column; }
       .modal-content .modal-body div:nth-child(1) {
-        height: 75vh; }
+        width: 90vw; }
         .modal-content .modal-body div:nth-child(1) img {
           height: 75%;
           width: 80%; }
+      .modal-content .modal-body div:nth-child(2) {
+        height: 100vh;
+        width: 100%; }
   /* TIENDA POPULARES */
   .seccionTiendaPopulares__juegos {
     height: 215vh;
@@ -1228,7 +1308,7 @@ main .contacto__fondo {
       .headerError404 .header__nav > ul > li > a {
         height: 100%;
         color: black;
-        font-size: 1.25rem;
+        font-size: 2vh;
         font-weight: bolder;
         display: flex;
         align-items: center;
@@ -1279,7 +1359,7 @@ main .contacto__fondo {
         .footerError404 .footer__enlace ul li a {
           height: 100%;
           color: black;
-          font-size: 1.25rem;
+          font-size: 2vh;
           font-weight: bolder;
           display: flex;
           align-items: center;

@@ -108,18 +108,18 @@
                                     // padding: 0px 20px;
                                     .subtitulo {
                                         color: $color-base;
-                                        font-size: (($font-enlace/(250/221)));
+                                        font-size: 2vh;
                                         font-weight: 600;
                                         text-transform: uppercase;
                                         text-decoration: none;
-                                        padding: 0.9rem 0rem;
+                                        padding: 0.4rem 0rem;
                                     }
                                     a {
                                         color: $color-terciario;
                                         font-weight: 500;
                                         text-transform: uppercase;
-                                        font-size: (($font-enlace/(25/14)));
-                                        line-height: 1.25rem;
+                                        font-size: 1.25vh;
+                                        line-height: 2.25vh;
                                     }
                                     a:hover {
                                         color: $color-base;
@@ -193,13 +193,14 @@
                                     background-color: #ccc;
                                     margin: 0px 2rem;
                                     width: 8vw; //170px
-                                    height: 225px; //225px
+                                    height: 25vh; //225px
                                     box-shadow: $box-shadow $color-terciario;
                                 }
                                 p {
                                     text-align: center;
                                     text-transform: uppercase;
                                     font-weight: 600;
+                                    font-size: 2vh;
                                 }
                             }
                         }
