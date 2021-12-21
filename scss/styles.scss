@@ -48,7 +48,7 @@ main {
                 height: 100%;
                 display: flex;
                 align-items: flex-end;
-                font-size: 4rem;
+                font-size: $font-titulo + 1vh;
             }
             p {
                 height: 100%;
@@ -58,7 +58,7 @@ main {
                 display: flex;
                 align-items: center;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: $font-enlace + 0.8vh;
             }
         }
     }
@@ -83,6 +83,7 @@ main {
 @import "layout/footer";
 
 @import "themes/media-0-1464";
+@import "themes/media-0-1024";
 @import "themes/media-0-576";
 @import "themes/media-0-360";
 

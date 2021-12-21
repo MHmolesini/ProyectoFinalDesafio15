@@ -127,18 +127,18 @@
     /* TIENDA MARCAS */
 
     .modal-content {
-        height: 90vh;
+        height: 80vh;
         .modal-body {
             height: 100%;
             div:nth-child(1){
-                height: 80vh;
+                height: 70vh;
                 img {
                     max-height: 45vh;
                     min-height: 40vh;
                 }
             }
             div:nth-child(2) {
-                height: 80vh;
+                height: 70vh;
                 h2 {
                     font-size: 5vh;
                 }

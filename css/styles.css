@@ -476,7 +476,7 @@ main .carouselTienda .carousel-inner .carousel-item {
   .noticias .noticias__seccion .noticias__seccion__articulos div h4 {
     overflow: hidden;
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 2vh;
     text-shadow: 2px 2px 7px gray;
     width: 80%;
     margin: 2rem auto; }
@@ -527,7 +527,7 @@ main .contacto__fondo {
       height: 100%;
       display: flex;
       align-items: flex-end;
-      font-size: 4rem; }
+      font-size: 5.8vh; }
     main .sobreNosotros__fondo div p,
     main .contacto__fondo div p {
       height: 100%;
@@ -537,7 +537,7 @@ main .contacto__fondo {
       display: flex;
       align-items: center;
       text-align: center;
-      font-size: 1.5rem; }
+      font-size: 2.8vh; }
 
 main .contacto__fondo {
   background-image: url("../media/images/fondos/battlefield-2042_5120x2880_xtrafondos.com.jpg"); }
@@ -928,20 +928,195 @@ main .contacto__fondo {
     font-size: 2vh; }
   /* TIENDA MARCAS */
   .modal-content {
-    height: 90vh; }
+    height: 80vh; }
     .modal-content .modal-body {
       height: 100%; }
       .modal-content .modal-body div:nth-child(1) {
-        height: 80vh; }
+        height: 70vh; }
         .modal-content .modal-body div:nth-child(1) img {
           max-height: 45vh;
           min-height: 40vh; }
       .modal-content .modal-body div:nth-child(2) {
-        height: 80vh; }
+        height: 70vh; }
         .modal-content .modal-body div:nth-child(2) h2 {
           font-size: 5vh; }
         .modal-content .modal-body div:nth-child(2) p {
           font-size: 2vh; } }
+
+/* Media Queries */
+/* 0px a 1024px */
+@media screen and (max-width: 1024px) {
+  /* INDEX */
+  .header .header__Boton .botonDeLogin {
+    font-size: 1.15385rem;
+    height: 50%;
+    width: 70%; }
+  .header .header__nav ul li .subMenu {
+    height: 50vh; }
+  .header .header__nav ul li:hover .subMenu {
+    grid-template-columns: 100%;
+    grid-template-areas: "categorias"; }
+    .header .header__nav ul li:hover .subMenu .subMenuCategorias {
+      grid-area: categorias; }
+    .header .header__nav ul li:hover .subMenu .subMenuPopulares {
+      display: none; }
+  .boton {
+    height: 3rem;
+    width: 14rem; }
+  /* Carrousel */
+  #carouselExampleCaptions .carousel-inner .carousel-item div {
+    height: 100%;
+    width: 70vw; }
+    #carouselExampleCaptions .carousel-inner .carousel-item div p {
+      font-size: 2.8vh; }
+    #carouselExampleCaptions .carousel-inner .carousel-item div div {
+      height: 33%;
+      width: 75%; }
+  /* NOTICIAS */
+  .noticias .noticias__seccion .noticias__seccion__articulos div {
+    height: 35vh;
+    width: 45vw; }
+  /* SOBRE NOSOTROS */
+  /* Main */
+  .sobreNosotros__seccion {
+    width: 80vw; }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div p {
+      font-size: 1.35rem; }
+  .sobreNosotros__seccion {
+    width: 80vw;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 100px); }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(10, 1fr); }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div p {
+        font-size: 2vh; }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(1) {
+      grid-column: 1/13;
+      grid-row: 2/6; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(1) img {
+        grid-column: 1/9;
+        grid-row: 1/10; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(1) div {
+        grid-column: 6/13;
+        grid-row: 5/11; }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(2) {
+      grid-column: 1/13;
+      grid-row: 6/10; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(2) img {
+        grid-column: 5/13;
+        grid-row: 1/10; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(2) div {
+        grid-column: 1/8;
+        grid-row: 5/11; }
+    .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(3) {
+      grid-column: 1/13;
+      grid-row: 10/14; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(3) img {
+        grid-column: 1/9;
+        grid-row: 1/10; }
+      .sobreNosotros__seccion .sobreNosotros__seccion__contenedor:nth-child(3) div {
+        grid-column: 6/13;
+        grid-row: 5/11; }
+  /* TIENDA POPULARES */
+  .seccionTiendaPopulares__juegos {
+    height: 70vh;
+    width: 100%;
+    grid-template-rows: repeat(12, 5.83333vh); }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1,
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 {
+      height: 70vh;
+      width: 100vw; }
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1 h2,
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 h2 {
+        font-size: 4.3vh; }
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1 p,
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 p {
+        font-size: 1.2vh; }
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo1 .parrafoPopulares,
+      .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__fondo2 .parrafoPopulares {
+        font-size: 1.4vh; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__portada {
+      height: 40vh;
+      width: 22vw; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1,
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 {
+      grid-column: 6/13;
+      grid-row: 2/11;
+      display: grid;
+      grid-template-columns: repeat(24, 2.40139vw);
+      grid-template-rows: repeat(18, 3.24074vh); }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 h2 {
+      grid-column: 11/25;
+      grid-row: 1/4;
+      margin-top: 0; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(2) {
+      grid-column: 10/25;
+      grid-row: 5/8; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(3) {
+      grid-column: 8/25;
+      grid-row: 8/10;
+      text-align: left;
+      margin: auto 0; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(4) {
+      grid-column: 6/25;
+      grid-row: 10/13; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(5) {
+      grid-column: 5/25;
+      grid-row: 13/14;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(6) {
+      grid-column: 4/25;
+      grid-row: 14/15;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(7) {
+      grid-column: 3/25;
+      grid-row: 15/16;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(8) {
+      grid-column: 2/25;
+      grid-row: 16/17;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info1 p:nth-child(9) {
+      grid-column: 1/25;
+      grid-row: 17/18;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 h2 {
+      grid-column: 1/25;
+      grid-row: 1/3;
+      margin-top: 0; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(2) {
+      grid-column: 2/25;
+      grid-row: 3/6; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(3) {
+      grid-column: 3/25;
+      grid-row: 6/7;
+      text-align: left;
+      margin: auto 0; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(4) {
+      grid-column: 5/25;
+      grid-row: 7/10; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(5) {
+      grid-column: 6/25;
+      grid-row: 10/11;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(6) {
+      grid-column: 7/25;
+      grid-row: 11/12;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(7) {
+      grid-column: 8/25;
+      grid-row: 12/13;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(8) {
+      grid-column: 9/25;
+      grid-row: 13/14;
+      text-align: left; }
+    .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__info2 p:nth-child(9) {
+      grid-column: 10/25;
+      grid-row: 14/15;
+      text-align: left; } }
 
 /* Media Queries */
 /* 0px a 576px */

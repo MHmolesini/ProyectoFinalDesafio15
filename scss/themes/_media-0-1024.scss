@@ -1,0 +1,266 @@
+/* Media Queries */
+
+/* 0px a 1024px */
+
+@media screen and (max-width:1024px) {
+
+    /* INDEX */
+
+    .header {
+        .header__Boton {
+            .botonDeLogin {
+                font-size: (($font-boton)/1.3);
+                @include alto-ancho(50%, 70%);
+            }
+        }
+        .header__nav {
+            ul {
+                li {
+                    .subMenu {
+                        height: 50vh;
+                    }
+                }
+                li:hover {
+                    .subMenu {
+                        grid-template-columns: 100%;
+                        grid-template-areas: 
+                            "categorias";
+                        .subMenuCategorias {
+                            grid-area: categorias;
+                        }
+                        .subMenuPopulares {
+                            display: none;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .boton {
+        @include alto-ancho(3rem, 14rem);
+    }
+
+    /* Carrousel */
+
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                div {
+                    @include alto-ancho(100%, 70vw);
+                    p {
+                        font-size: $font-enlace + 0.8vh;
+                    }
+                    div {
+                        @include alto-ancho(33%, 75%);
+                    }
+                }
+            }
+        }
+    }
+    
+    /* NOTICIAS */
+
+    .noticias {
+        .noticias__seccion {
+            .noticias__seccion__articulos {
+                div {
+                    height: 35vh;
+                    width: 45vw;
+                }
+            }
+        }
+    }
+
+    /* SOBRE NOSOTROS */
+
+    /* Main */
+
+    .sobreNosotros__seccion {
+        width: 80vw;
+        .sobreNosotros__seccion__contenedor {
+            div {
+                p {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+
+    .sobreNosotros__seccion {
+        width: 80vw;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(14, 100px);
+        .sobreNosotros__seccion__contenedor {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            div {
+                p {
+                    font-size: $font-enlace;
+                }
+            }
+        }
+        .sobreNosotros__seccion__contenedor:nth-child(1) {
+            grid-column: 1/13;
+            grid-row: 2/6;
+            img {
+                grid-column: 1/9;
+                grid-row: 1/10;
+            }
+            div {
+                grid-column: 6/13;
+                grid-row: 5/11;
+            }
+        }
+        .sobreNosotros__seccion__contenedor:nth-child(2) {
+            grid-column: 1/13;
+            grid-row: 6/10;
+            img {
+                grid-column: 5/13;
+                grid-row: 1/10;
+            }
+            div {
+                grid-column: 1/8;
+                grid-row: 5/11;
+            }
+        }
+        .sobreNosotros__seccion__contenedor:nth-child(3) {
+            grid-column: 1/13;
+            grid-row: 10/14;
+            img {
+                grid-column: 1/9;
+                grid-row: 1/10;
+            }
+            div {
+                grid-column: 6/13;
+                grid-row: 5/11;
+            }
+        }
+    }
+
+    /* TIENDA POPULARES */
+
+    .seccionTiendaPopulares__juegos {
+        @include alto-ancho(70vh, 100%);
+        grid-template-rows: repeat(12, 5.833333vh);
+        .seccionTiendaPopulares__juegos__fondo1,
+        .seccionTiendaPopulares__juegos__fondo2 {
+            @include alto-ancho(70vh, 100vw);
+            h2 {
+                font-size: $font-titulo - 0.5vh;
+            }
+            p {
+                font-size: $font-enlace - 0.8vh;
+            }
+            .parrafoPopulares {
+                font-size: $font-enlace - 0.6vh;
+            }
+        }
+        .seccionTiendaPopulares__juegos__portada {
+            @include alto-ancho(40vh, 22vw);
+        }
+        .seccionTiendaPopulares__juegos__info1,
+        .seccionTiendaPopulares__juegos__info2 {
+            grid-column: 6/13;
+            grid-row: 2/11;
+            display: grid;
+            grid-template-columns: repeat(24, 2.4013888vw);
+            grid-template-rows: repeat(18, 3.240740vh);
+        }
+        .seccionTiendaPopulares__juegos__info1 {
+            h2 {
+                grid-column: 11/25;
+                grid-row: 1/4;
+                margin-top: 0;
+            }
+            p:nth-child(2) {
+                grid-column: 10/25;
+                grid-row: 5/8;
+            }
+            p:nth-child(3) {
+                grid-column: 8/25;
+                grid-row: 8/10;
+                text-align: left;
+                margin: auto 0;
+            }
+            p:nth-child(4) {
+                grid-column: 6/25;
+                grid-row: 10/13;
+            }
+            p:nth-child(5) {
+                grid-column: 5/25;
+                grid-row: 13/14;
+                text-align: left;
+            }
+            p:nth-child(6) {
+                grid-column: 4/25;
+                grid-row: 14/15;
+                text-align: left;
+            }
+            p:nth-child(7) {
+                grid-column: 3/25;
+                grid-row: 15/16;
+                text-align: left;
+            }
+            p:nth-child(8) {
+                grid-column: 2/25;
+                grid-row: 16/17;
+                text-align: left;
+            }
+            p:nth-child(9) {
+                grid-column: 1/25;
+                grid-row: 17/18;
+                text-align: left;
+            }
+        }
+        .seccionTiendaPopulares__juegos__info2 {
+            h2 {
+                grid-column: 1/25;
+                grid-row: 1/3;
+                margin-top: 0;
+            }
+            p:nth-child(2) {
+                grid-column: 2/25;
+                grid-row: 3/6;
+            }
+            p:nth-child(3) {
+                grid-column: 3/25;
+                grid-row: 6/7;
+                text-align: left;
+                margin: auto 0;
+            }
+            p:nth-child(4) {
+                grid-column: 5/25;
+                grid-row: 7/10;
+            }
+            p:nth-child(5) {
+                grid-column: 6/25;
+                grid-row: 10/11;
+                text-align: left;
+            }
+            p:nth-child(6) {
+                grid-column: 7/25;
+                grid-row: 11/12;
+                text-align: left;
+            }
+            p:nth-child(7) {
+                grid-column: 8/25;
+                grid-row: 12/13;
+                text-align: left;
+            }
+            p:nth-child(8) {
+                grid-column: 9/25;
+                grid-row: 13/14;
+                text-align: left;
+            }
+            p:nth-child(9) {
+                grid-column: 10/25;
+                grid-row: 14/15;
+                text-align: left;
+            }
+        }
+    }
+
+}
