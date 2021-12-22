@@ -1,0 +1,67 @@
+/* Media Queries */
+
+/* 1366px de ancho y 768px de alto */
+
+@media screen and (max-width:1366px) and (max-height:768px) {
+
+    /* INDEX */
+
+    .boton {
+        @include alto-ancho(3rem, 14rem);
+    }
+
+    /* Header */
+
+    .header {
+        .header__nav {
+            ul {
+                li {
+                    a {
+                        font-size: $font-enlace + 0.5vh;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer */
+
+    .footer {
+        .footer__enlace {
+            ul {
+                li {
+                    a {
+                        font-size: $font-enlace + 0.5vh;
+                    }
+                }
+            }
+        }
+    }
+
+    /* TIENDA */
+
+    /* Segundo Menu */
+
+    main {
+        .segundoMenu {
+            .listaSubMenu {
+                li {
+                    a {
+                        font-size: $font-enlace + 0.5vh;
+                    }
+                }
+            }
+        }
+    }
+
+    /* TIENDA POPULARES */
+
+    main {
+        .seccionTiendaPopulares__juegos {
+            .seccionTiendaPopulares__juegos__portada {
+                @include alto-ancho(50vh, 20vw);
+            }
+        }
+    }
+
+}
