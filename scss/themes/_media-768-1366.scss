@@ -59,7 +59,7 @@
     main {
         .seccionTiendaPopulares__juegos {
             .seccionTiendaPopulares__juegos__portada {
-                @include alto-ancho(50vh, 20vw);
+                @include alto-ancho(400px, 288px); //50vh, 20vw
             }
         }
     }

@@ -236,11 +236,9 @@
 
     .sobreNosotros {
         .sobreNosotros__seccion {
-            display: flex;
-            flex-direction: column;
+            display: block;
             .sobreNosotros__seccion__contenedor {
-                display: flex;
-                flex-direction: column;
+                display: block;
                 margin: 3vh 0vh;
                 img {
                     height: 35vh;
@@ -295,7 +293,7 @@
     /* TIENDA POPULARES */
 
     .seccionTiendaPopulares__juegos {
-        @include alto-ancho(125vh, 100%); /*172*/
+        @include alto-ancho(125vh, 100%);
         display: grid;
         grid-template-columns: repeat(12, 8.33333vw);
         grid-template-rows: repeat(25, 5vh);
@@ -309,8 +307,8 @@
             clip-path: polygon(0% 0%, 33% 0%, 100% 100%, 0% 100%);
         }
         .seccionTiendaPopulares__juegos__portada {
-            @include alto-ancho(50vh, (50vh*(2/3)));
-            grid-column: 4/10;
+            @include alto-ancho(375px, 250px);
+            grid-column: 5/10;
             grid-row: 2/11;
         }
         .seccionTiendaPopulares__juegos__info1,
