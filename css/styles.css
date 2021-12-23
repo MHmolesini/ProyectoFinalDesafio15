@@ -1500,6 +1500,45 @@ main .contacto__fondo {
         width: 100%; } }
 
 /* Media Queries */
+/* 0px a 425px */
+@media screen and (max-width: 425px) {
+  /* INDEX */
+  /* Header */
+  .header .header__nav ul li a {
+    font-size: 2.7rem; }
+  .header .header__nav ul li a:hover {
+    font-size: 2.2rem; }
+  /* Main */
+  #carouselExampleCaptions .carousel-inner .carousel-item div div {
+    width: 70vw;
+    height: 20%;
+    justify-content: space-between; }
+    #carouselExampleCaptions .carousel-inner .carousel-item div div a {
+      height: 3rem; }
+      #carouselExampleCaptions .carousel-inner .carousel-item div div a .boton {
+        height: 100%; }
+  /* Noticias */
+  main .terceraSeccion .noticia {
+    height: 300px; }
+    main .terceraSeccion .noticia div {
+      height: 100%; }
+  /* Footer */
+  .footer .footer__enlace ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer .footer__enlace ul li {
+      height: 7vh;
+      width: 35vw; }
+  /* TIENDA */
+  /* segundo menu */
+  main .segundoMenu .listaSubMenu li a {
+    font-size: 2vh; }
+  /* SOBRE NOSOTROS */
+  /* Main */
+  .sobreNosotros .sobreNosotros__seccion .sobreNosotros__seccion__contenedor div {
+    height: 30vh; } }
+
+/* Media Queries */
 /* 0px a 360px */
 @media screen and (max-width: 360px) {
   /* Header */
