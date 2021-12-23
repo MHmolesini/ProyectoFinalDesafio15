@@ -50,8 +50,7 @@
         width: 70vw;
         margin: 0 auto;
         .noticiasModal {
-            height: 70vh;
-            width: 70vw;
+            @include alto-ancho (70vh, 70vw);
             .noticiasModal__contenido {
                 height: 100%;
                 width: 70vw;

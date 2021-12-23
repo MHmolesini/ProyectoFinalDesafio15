@@ -40,9 +40,16 @@
                 a:hover {
                     background-color: $color-secundario;
                     color: $color-terciario;
+                    transition: 400ms;
                 }
             }
         }
+    }
+    .header__menuR {
+        display: none;
+    }
+    #menuR {
+        display: none;
     }
 }
 
@@ -62,6 +69,7 @@
                     left: 10%;
                     display: none;
                     z-index: 9999;
+                    transition: 400ms;
                 }
             }
             li:hover {

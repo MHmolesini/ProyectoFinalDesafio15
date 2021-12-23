@@ -27,6 +27,7 @@ main {
                 a:hover {
                     background-color: $color-base;
                     color: $color-secundario;
+                    transition: 400ms;
                 }
             }
         }
