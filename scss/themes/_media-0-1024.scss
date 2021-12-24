@@ -259,15 +259,6 @@
 
 @media screen and (max-width:1024px) and (max-height:768px) {
 
-    /* TIENDA POPULARES */
-
-    main {
-        .seccionTiendaPopulares__juegos {
-            .seccionTiendaPopulares__juegos__portada {
-                @include alto-ancho(375px, 250px); //40vh, 20vw
-            }
-        }
-    }
 
     /* TIENDA MARCAS */
 

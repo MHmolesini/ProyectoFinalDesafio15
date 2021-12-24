@@ -1,24 +1,21 @@
 /* Media Queries */
 
-/* 0px a 360px */
+/* 0px a 380px */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
+
+    /* INDEX */
 
     /* Header */
 
     .header {
         .header__nav {
-            >ul {
-                >li {
-                    >a {
-                        font-size: 0.8rem;
+            ul {
+                li {
+                    a {
+                        font-size: 2.3rem;
                     }
                 }
-            }
-        }
-        .header__Boton {
-            .botonDeLogin {
-                width: 80%;
             }
         }
     }
@@ -32,9 +29,10 @@
                     h1 {
                         font-size: 2.25rem;
                         width: 90vw;
+                        align-items: center;
                     }
                     p {
-                        width: 80vw;
+                        width: 75vw;
                     }
                 }
             }
@@ -46,7 +44,7 @@
     main {
         .terceraSeccion {
             .noticia {
-                @include alto-ancho(400px, 90vw);
+                @include alto-ancho(350px, 80vw);
             }
         }
     }
@@ -73,21 +71,13 @@
         .segundoMenu {
             .listaSubMenu {
                 li {
-                    a {
-                        font-size: 0.9rem;
-                        line-height: 1rem;
-                    }
+                    width: 32vw;
                 }
             }
         }
     }
 
     /* NOTICIAS */
-
-    iframe {
-        width: 80vw;
-        height: 80vw*(9/16);
-    }
 
     .noticias {
         .noticias__seccion {
@@ -131,9 +121,6 @@
     .sobreNosotros {
         .sobreNosotros__seccion {
             .sobreNosotros__seccion__contenedor {
-                img {
-                    height: 35vh;
-                }
                 div {
                     h2 {
                         font-size: 2rem;
@@ -152,6 +139,7 @@
             div {
                 p {
                     width: 90vw;
+                    font-size: 2rem;
                 }
             }
         }
@@ -172,13 +160,40 @@
         }
     }
 
+    /* TIENDA POPULARES */
+
+     main {
+        .seccionTiendaPopulares__juegos {
+            @include alto-ancho(140vh, 100%);
+            display: grid;
+            grid-template-columns: repeat(12, 8.33333vw);
+            grid-template-rows: repeat(28, 5vh);
+            .seccionTiendaPopulares__juegos__portada {
+                @include alto-ancho(285px, 190px);
+                grid-column: 4/9;
+                grid-row: 2/11;
+                .boton {
+                    height: 8vh;
+                    width: 50vw;
+                }
+            }
+            .seccionTiendaPopulares__juegos__info1,
+            .seccionTiendaPopulares__juegos__info2 {
+                .boton {
+                    height: 8vh;
+                    width: 50vw;
+                }
+            }
+        }
+    }
+
     /* TIENDA GENEROS */
 
     .tiendaGeneros {
         .tiendaGeneros__section {
             div {
                 h3 {
-                    font-size: 2.4rem;
+                    font-size: 2rem;
                 }
             }
         }
@@ -186,59 +201,19 @@
 
     /* TIENDA MARCAS */
 
-    main .seccionTiendaMarcas .seccionTiendaMarcas__logo {
-        width: 50vw; 
-        img {
-            height: 7rem;
-            margin: 1rem auto;
-        }
-    }
-
-    .modal-content {
-        height: 100%;
-        .modal-body {
-            display: flex;
-            flex-direction: column;
-            div:nth-child(1) {
-                // height: 75vh;
-                width: 90vw;
+    main {
+        .seccionTiendaMarcas {
+            .seccionTiendaMarcas__logo {
+                width: 50vw; 
                 img {
-                    @include alto-ancho(75%, 80%);
+                    height: 7rem;
+                    margin: 1rem auto;
                 }
             }
-            div:nth-child(2) {
-                height: 100vh;
-                width: 100%;
-            }
         }
     }
 
-    /* TIENDA POPULARES */
-
-    .seccionTiendaPopulares__juegos {
-        height: 215vh;
-        display: grid;
-        grid-template-columns: repeat(12, 8.33333vw);
-        grid-template-rows: repeat(35, 6.1428vh);
-        .seccionTiendaPopulares__juegos__portada {
-            @include alto-ancho(57vh, (100vw*(2/3)));
-            grid-column: 3/10;
-            grid-row: 2/11;
-            .boton {
-                width: 66vw;
-            }
-        }
-        .seccionTiendaPopulares__juegos__info1,
-        .seccionTiendaPopulares__juegos__info2 {
-            grid-row: 15/36;
-            h2 {
-                font-size: 2.5rem;
-            }
-            p {
-                margin: 0.5rem 0rem;
-            }
-        }
-    }
+   
 
     
 
