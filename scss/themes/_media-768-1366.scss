@@ -45,7 +45,9 @@
     main {
         .segundoMenu {
             .listaSubMenu {
+                width: 60vw;
                 li {
+                    width: 30%;
                     a {
                         font-size: $font-enlace + 0.5vh;
                     }
@@ -56,12 +58,12 @@
 
     /* TIENDA POPULARES */
 
-    main {
-        .seccionTiendaPopulares__juegos {
-            .seccionTiendaPopulares__juegos__portada {
-                @include alto-ancho(400px, 288px); //50vh, 20vw
-            }
-        }
-    }
+    // main {
+    //     .seccionTiendaPopulares__juegos {
+    //         .seccionTiendaPopulares__juegos__portada {
+    //             @include alto-ancho(400px, 288px); //50vh, 20vw
+    //         }
+    //     }
+    // }
 
 }

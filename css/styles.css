@@ -892,12 +892,13 @@ main .contacto__fondo {
     font-size: 2.5vh; }
   /* TIENDA */
   /* Segundo Menu */
-  main .segundoMenu .listaSubMenu li a {
-    font-size: 2.5vh; }
-  /* TIENDA POPULARES */
-  main .seccionTiendaPopulares__juegos .seccionTiendaPopulares__juegos__portada {
-    height: 400px;
-    width: 288px; } }
+  main .segundoMenu .listaSubMenu {
+    width: 60vw; }
+    main .segundoMenu .listaSubMenu li {
+      width: 30%; }
+      main .segundoMenu .listaSubMenu li a {
+        font-size: 2.5vh; }
+  /* TIENDA POPULARES */ }
 
 /* Media Queries */
 /* 0px a 1464px */
