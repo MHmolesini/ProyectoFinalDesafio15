@@ -77,6 +77,20 @@
         }
     }
 
+    /* Main */
+
+    .seccionGeneros {
+        .seccionGeneros__contenedor {
+            .seccionGeneros__contenedor__generos {
+                li {
+                    .subtitulo {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
     /* NOTICIAS */
 
     .noticias {
@@ -137,9 +151,12 @@
     .contacto {
         .contacto__fondo {
             div {
-                p {
-                    width: 90vw;
-                    font-size: 2rem;
+                width: 100vw;
+                h1 {
+                    width: 100%;
+                    font-size: 2.5rem;
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
@@ -148,6 +165,11 @@
             .contacto__seccion__formulario1,
             .contacto__seccion__formulario2 {
                 border-radius: 30px;
+            }
+            .contacto__seccion__formulario1 {
+                p {
+                    font-size: 1.125rem;
+                }
             }
             .contacto__seccion__formulario2 {
                 .form-group {
